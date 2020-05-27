@@ -5,10 +5,16 @@ import Topbar from '../../components/Topbar';
 
 import Routes from '../../routes';
 
+import FeedRoute from  '../../routes/FeedRoute';
+
 import './App.scss';
 
 const App = () => (
-  <div>
+  <div data-testid="app">
+    <BrowserRouter>
+      <Topbar />
+      <FeedRoute />
+    </BrowserRouter>
   </div>
 );
 
